@@ -1,0 +1,45 @@
+#payment {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#payment h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#payment h3, #payment h4 {
+    color: #333;
+}
+
+#payment p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+#payment .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#payment .text-center {
+    text-align: center;
+}
+
+#payment img {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #payment h2 {
+        font-size: 2rem;
+    }
+
+    #payment p {
+        font-size: 1rem;
+    }
+}
