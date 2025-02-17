@@ -1,0 +1,207 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Logo */
+#logo {
+    margin: 3px 5px;
+}
+
+#logo img {
+    height: 46px;
+    margin: 3px 5px;
+}
+
+/* Navbar items */
+#navbar ul {
+    display: flex;
+    margin-left: auto;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+#home h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+#home p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #home {
+        padding: 15px 20px; /* Reduce the padding for better fit */
+        height: auto; /* Allow content to adjust height based on screen size */
+    }
+
+    #home h1 {
+        font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+
+    #home p {
+        font-size: 1.2rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    .btn {
+        padding: 8px 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        padding: 10px 15px; /* Further reduce padding for very small screens */
+    }
+
+    #home h1 {
+        font-size: 1.5rem; /* Adjust title size further */
+    }
+
+    #home p {
+        font-size: 1rem; /* Adjust paragraph size further */
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Category Container */
+.container.my-3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Service Box */
+.service-box {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+}
+
+.d-flex .service-box {
+    flex: 1; /* Ensure equal distribution */
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icon {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-icon:hover {
+    color: #ddd;
+}
+
+/* Navbar Links */
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Logo and Navbar Adjustments for Small Screens */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar ul li {
+        margin-bottom: 10px;
+    }
+}
